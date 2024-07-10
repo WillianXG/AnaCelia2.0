@@ -20,4 +20,22 @@ export default defineNuxtConfig({
       },
     },
   },
+
+  app: {
+    head: {
+      title: 'Ana Célia Psicologa',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { hid: 'description', name: 'description', content: 'Págiana da Psicologa Ana Célia' }
+      ],
+      link: [
+        { rel: 'icon', type: 'icon', sizes: '128x128', href: '/favicon.ico' }
+        // Adicione mais tamanhos conforme necessário
+      ]
+
+    }
+  }
+  
+  
 })

@@ -9,7 +9,7 @@
       <v-list>
         <v-list-item link to="/">
           <v-list-item-icon>
-          </v-list-item-icon >
+          </v-list-item-icon>
           <v-list-item-title>Início</v-list-item-title>
         </v-list-item>
         <v-list-item link to="/about">
@@ -18,16 +18,17 @@
           <v-list-item-title>Sobre</v-list-item-title>
         </v-list-item>
         <v-list-item link to="/treatment">
-            <v-icon>mdi-settings</v-icon>
+          <v-icon>mdi-settings</v-icon>
           <v-list-item-title>Tratamentos</v-list-item-title>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
 
     <v-content>
-      <!-- Conteúdo principal do seu aplicativo aqui -->
       <div class="text-center mt-15">
-        <NuxtPage/>
+        <v-lazy :min-height="200" :options="{ 'threshold': 0.5 }" transition="fade-transition">
+          <NuxtPage />
+        </v-lazy>
       </div>
     </v-content>
   </v-app>
